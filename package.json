@@ -2,9 +2,8 @@
   "name": "bootstrap-intro",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "sass --watch scss:css",
+    "dev": "concurrently \"sass --watch scss:css\" \"live-server\"",
     "build": "sass scss:css"
   },
   "repository": {
@@ -12,8 +11,8 @@
     "url": "git+https://github.com/lmachens/bootstrap-intro.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Leon Machens",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lmachens/bootstrap-intro/issues"
   },
@@ -21,5 +20,9 @@
   "dependencies": {
     "bootstrap": "^4.5.2",
     "sass": "^1.26.11"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "live-server": "^1.2.1"
   }
 }
